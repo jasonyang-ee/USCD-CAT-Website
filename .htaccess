@@ -1,0 +1,19 @@
+RewriteBase /
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^(www.)?jasonteng.org$
+RewriteCond %{REQUEST_URI} !^/page
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)index\.html?$ /page/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www.)?jasonteng.org$
+RewriteCond %{REQUEST_FILENAME} .*/index\.html$
+RewriteRule ^(.*)/(.*)/index\.html?$ /page/$2 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www.)?jasonteng.org$
+RewriteCond %{REQUEST_FILENAME} .*/index\.html$
+RewriteRule ^(.*)/index\.html?$ page/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www.)?jasonteng.org$
+RewriteRule ^(/)?$ page/ [L]

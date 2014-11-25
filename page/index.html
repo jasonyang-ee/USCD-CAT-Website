@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>The Charm of Robotics</title>
+    <meta charset='utf-8'>
+    <meta content='index, follow' name='robots'>
+    <meta content='width=960' name='viewport'>
+    
+    <!-- for Google -->
+    <meta content='The class website for UCSD CAT125' name='description'>
+    <meta content='robotic micromouse desig PCB PID control maze' name='keywords'>
+    <meta content='CHIEH-SHENG TENG' name='author'>
+    <meta content='www.jasonteng.org' name='application-name'>
+    
+    <!--  Tracking by google  -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-48402871-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <link href='../css/style.css' media='screen' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
+    <link href="../img/icon.ico" rel="shortcut icon">
+  </head>
+  
+  <body>
+    <div class='page'>
+		<!--  Header  -->
+      <div class='header space'></div>
+      <div class='header'>
+        <div class='box menu'>
+          <a class='logo' href='index.html'>The Charm of Robotics</a>
+          <ul>
+            <li class=' about'>
+              <a href='about/index.html'>About</a>
+            </li>
+						<li class='active goal'>
+						  <a href='goal/index.html'>My goals</a>
+						</li>
+            <li class=' involve'>
+              <a href='involve/index.html'>Get involved</a>
+            </li>
+            <li class=' learn'>
+              <a href='learn/index.html'>Learn More</a>
+            </li>
+            <li class=' critique'>
+              <a href='critique/index.html'>Critique</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      <div class='content'>
+        <div class='box single'>
+          <div class="img_goal_start"><span></span></div>
+          
+          <div class="arrow_1"><span></span></div>
+          <h2>1. plan from scratch</h2>
+          <div class="completed">understand on what you want!</div>
+          <p>
+          <span class="img_goal_step1"></span>
+            Think carefully about the central idea of the robot, and always use it as the reference guide to prevent you deviating from the original purpose. In this case, I am working on an autonomous maze solving robot, so I wish to have a small body, accurate motion control, and a good distance sensor.
+          </p>
+          <div class="goal_step1">
+            <div><span class="goal_team"></span><br>form a team</div>
+            <div><span class="goal_collaborate"></span><br>collaborate</div>
+            <div><span class="goal_question"></span><br>ask questions</div>
+            <div><span class="goal_tutorial"></span><br>find tutorial</div>
+          </div>
+          
+		  		<div class="arrow_2"><span></span></div>
+          <h2>2. Define the Functionality</h2>
+          <div class="completed">Find out what do you want to do</div>
+          <p> 
+						<span class="img_goal_step2"></span>
+						Once you have your guideline, the next step is to understand how to accomplish such goal and identify the necessary functions that is required for the desired robot design. In Micromouse, the sensor is detecting with infrared intensity. The system control is done with a wheel encoder. The decision making is processed inside the microcontroller.
+          </p>
+		  
+		  		<div class="arrow_3"><span></span></div>
+          <h2>3. Research on the Components and Devices</h2>
+          <div class="completed">List Out The Essential Components</div>
+          <p> 
+						The same function can be found through multiple devices and IC chips, so it is your job to read through the data sheet of each of those components and decide the best fit product for your design. This process usually takes much time, but it is a very important step which will significantly affect the performance of the robot. The components will determine the limitation of the robot and it will be extremely difficult to change the specification in the future.
+          </p>
+		  		<div class="img_goal_step3"><span></span></div>
+		  		
+					<div class="arrow_4"><span></span></div>
+					<h2>4. Coordinate Every Components</h2>
+					<div class="completed">List Out The Essential Components</div>
+					<p> 
+						<span class="img_goal_step4"></span>
+						After know what components to use for your design, the second most important step is to make sure every of those chosen components will work with each other. Sometimes, each component can function properly by itself, but they might conflict with other parts while they are assembled together. The main task here is to test them all together and ensure the system can generate the desired output.
+					</p>
+		  
+		  		<div class="arrow_3"><span></span></div>
+          <h2>5. Layout the Circuit with PCB</h2>
+          <div class="completed">List Out The Essential Components</div>
+          <p> 
+						<span class="img_goal_step5"></span>
+						This step will finalize the hardware design, and any mistake made here will be irreversible, so you should proceed to this step with extra cautious. In my case, Eagle CAD is the software that I used for PCB layout. The recommended circuit schematic for each components can be fund in its data sheet, it is very important to study the data sheet before using the device. The more detail of fabricating PCB can be found under the “Learn More” tab.
+          </p>
+		  
+		  		<div class="arrow_2"><span></span></div>
+          <h2>6. Assemble the hardware</h2>
+          <div class="completed">List Out The Essential Components</div>
+          <p> 
+						<span class="img_goal_step6"></span>
+						Finally, you have finished your design, the last step is to solder the IC chip to the PCB and then secure other required hardware pieces. Then, the robot is ready for programming, and the coding process is just a free play ground where you can apply any functionality to the robot as long as the function fits in the hardware limitation.
+          </p>
+				</div>
+				
+				
+				<footer>
+				  <h3>Contact Me</h3>
+				  <div class='email'><a href='mailto:c3teng@ucsd.edu?subject=Question about Robot
+				  &body=Hello Jason,%0D%0A%0D%0AI wish to ask...'>email</a></div>
+				</footer>
+      </div>
+    </div>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+    <script type='text/javascript' src='https://js.stripe.com/v2/'></script>
+    <script type='text/javascript' src='../lib/jquery-scrolltofixed.js'></script>
+    <script type='text/javascript' src='../lib/jquery-scrollUp.js'></script>
+    <script type='text/javascript' src='../lib/app.js'></script>
+  </body>
+</html>
+
+<!-- Localized -->

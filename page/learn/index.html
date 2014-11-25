@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>The Charm of Robotics</title>
+    <meta charset='utf-8'>
+    <meta content='index, follow' name='robots'>
+    <meta content='width=960' name='viewport'>
+    
+    <!-- for Google -->
+    <meta content='The class website for UCSD CAT125' name='description'>
+    <meta content='robotic micromouse desig PCB PID control maze' name='keywords'>
+    <meta content='CHIEH-SHENG TENG' name='author'>
+    <meta content='www.jasonteng.org' name='application-name'>
+    
+    <!--  Tracking by google  -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-48402871-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <link href='../../css/style.css' media='screen' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
+    <link href="../../img/icon.ico" rel="shortcut icon">
+  </head>
+  
+  <body>
+    <div class='page'>
+    <!--  Header  -->
+      <div class='header space'></div>
+      <div class='header_nofix'>
+        <div class='box menu'>
+          <a class='logo' href='../index.html'>The Charm of Robotics</a>
+          <ul>
+            <li class=' about'>
+              <a href='../about/index.html'>About</a>
+            </li>
+    				<li class=' goal'>
+    				  <a href='../goal/index.html'>My goals</a>
+    				</li>
+            <li class=' involve'>
+              <a href='../involve/index.html'>Get involved</a>
+            </li>
+            <li class='active learn'>
+              <a href='index.html'>Learn More</a>
+            </li>
+            <li class=' critique'>
+              <a href='../critique/index.html'>Critique</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='subheader'>
+	      <div class='box submenu'>
+	        <ul>
+	          <li><a href='#software'>Software</a></li>
+	          <li><a href='#hardware'>Hardware</a></li>
+	        	<li><a href='#body'>Body Design</a></li>
+	        	<li><a href='#pcb'>PCB Design</a></li>
+	        </ul>
+	      </div>
+      </div>
+      
+      <div class='anchor' id='software'></div>
+      <div class='box single'>
+      	<h2>Software</h2>
+      	<h4>Programming Language</h4>
+      	<p>
+      		The programming language determines the difficulty of constructing the system. With C language, it becomes much easier to interact with the system memory and many other low level of machine firmware. Therefore, C language is widely used under ARM environment. In this website, all the projects are accomplished with C language as well.
+      	</p>
+      	<h4>System Structure</h4>
+      	<p>
+      		A good coding style and system construction will always help you in developing a complex robot. It is also easier for you to debug if you have a well organized system structure. The good practice is to use objected orientated class to group different functions with different purpose.
+      	</p>
+      	<h4>Algorithm</h4>
+      	<p>
+      		Algorithm provides your robot the ability to perform different kind of task. The error here are very difficult to catch since it will mostly be a logical error. Therefore, it is important to simulate your algorithm under a virtual environment which will be much easier to debug. 
+      	</p>
+      </div>
+      
+      <div class='anchor' id='hardware'></div>
+      <div class='box single box_learn'>
+      	<h2>Hardware</h2>
+      	<div class="img_learn_hardware"><span></span></div>
+      	<h4>Microcontroller</h4>
+	      <p>
+					This is a central process unit in the robot, and it is also the most important component in the embedded system robotic design. The microcontroller will determine your future system capability in terms of computation speed and memory size. In the example given in this website, the Micromouse is using Leaflab Maple Mini R3 which is an ARM system.
+      	</p>
+      	<h4>Sensor</h4>
+      	<p>
+      		For the robot to interact with the environment, sensor is necessary and required. There are many different sensors available on the market. To detect distance, Inferred and sonar are commonly used. To detect motion, IMR unit is the only option. Some times temperature and moisture detection are also required. It is the designer's job to determine which sensing ability is required for the robot specification.
+      	</p>
+      	<h4>Voltage Regulator</h4>
+      	<p>
+      		The voltage of lithium battery doesn't stay constant, it usually have 1 volt of difference between a fully charged state and a depleted state. Therefore, it is necessary to use a regulator to ensure the source voltage to the circuit can be constant and stable.
+      	</p>
+      	<h4>Battery</h4>
+      	<p>
+      		The battery has two important unit to pay attention. Battery Capacity is the total amount of energy that the battery pack can store, and the output capacity is the maximum output ability at a moment. That is if you have a 7.4V 800mAh 20C of battery, it will be able to provide total of 800mA*7.4V = 5.92 Watt of energy, and it will be able to run a 20*800mA = 1.6 Amp of device load at any moment.
+      	</p>
+      	<h4>H-Bridge</h4>
+      	<p>
+      		The output of the robot is often the motor, and to control the motor, a motor driver is required. The internal circuitry of a motor driver is H-Bridge switch circuit. This device can generate a different percentage of output respect to input based on the provided duty cycle ration.
+      	</p>
+      	<h4>Wheel Encoder</h4>
+      	<p>
+      		In order to monitor the feedback from your output, which is the motor in this case. You will have to add this device the the back of the motor shaft, then it can keep track of the motor rotation count which the feedback data can be further used in system control. Eventually, it allows us to drive the robot with any of our desired behavior.
+				</p>
+      </div>
+      
+      <div class='anchor' id='body'></div>
+      <div class='box single box_learn'>
+      	<h2>Body Design</h2>
+      	<div class="img_learn_body"><span></span></div>
+      	<h4>3D Printer</h4>
+      	<p>
+      		In a customized design robot, finding a suitable component is very difficult, and the solution, as you may expected, is to also customize your own robot frame. The good news is that 3D printer has become very popular in recent years. There are many different service providers, and the designer can easily access those service with a fair amount of charge. In order to fabricate the customized component, designer must model their product on 3D CAD software such as Solidwork.
+      	</p>
+      	<h4>Dimension</h4>
+      	<p>
+      		Most of the robotic competition has their specific rules to the robot. The rules sometimes will limit the dimension of the robot, or the characteristic of the competition may naturally limit the possible dimension of the robot design. For example, in the micromouse competition, due to the size of the maze, the dimension of the robot must be under 16.8cm by 16.8cm which is the area of one maze cell. It is a good practice to check the competition rule before designing the body of the robot.
+      	</p>
+      </div>
+      
+      <div class='anchor' id='pcb'></div>
+      <div class='box single box_learn'>
+      	<h2>PCB Design</h2>
+      	<div class="img_learn_pcb"><span></span></div>
+      	<h4>Why Using PCB</h4>
+      	<p>
+      		Using prototype board to assemble the circuit on the final product is dangerous and unreliable. The loss connection may cause short circuit and further cause fire. PCB can provide stability and robustness to the circuit.
+      	</p>
+      	<h4>Eagle CAD</h4>
+      	<p>
+      		This software can help you to layout your PCB design and eventually generate the necessary Gerber file for you to order your design from fabrication services provider.
+      		<div class='link_text'>
+      		  <div class='link'>Eagle Official Website</div>
+      		  <a target='_blank' href='http://www.cadsoftusa.com/'>Go Visit</a>
+      		  <p>This is the official website for Eagle CAD software, and there is a free version of the software with limited functionality available for download.</p>
+      		</div>
+      	</p>
+      	<h4>Fabrication</h4>
+      	<p>
+      		There are many fabrication service provider, and they all have different capability and service charge. The good practice is to not layout the design with the capability limit, instead you should leave some room and space between the components and wire traces to avoid fabrication error which many cause a shorted circuit.
+      		<div class='link_text'>
+      		  <div class='link'>OSH park</div>
+      		  <a target='_blank' href='http://oshpark.com/'>Go Visit</a>
+      		  <p>This is the one of the fabricator that I frequently used. It has an average 12 days of order delivery time.</p>
+      		</div>
+      	</p>
+      	<h4>Research Components</h4>
+      	<p>
+      		It is very important to research for the components while designing the PCB since you will have to purchase those components in the future. After you find the available components on the market, you can now search for the components layout library for the PCB software. 
+      	</p>
+      </div>
+      
+      
+
+      
+      <div class='content'>
+      	
+      
+	      <footer>
+	        <h3>Contact Me</h3>
+	        <div class='email'><a href='mailto:c3teng@ucsd.edu?subject=Question about Robot
+	        &body=Hello Jason,%0D%0A%0D%0AI wish to ask...'>email</a></div>
+	      </footer>
+	    </div>	
+    </div>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+    <script type='text/javascript' src='https://js.stripe.com/v2/'></script>
+    <script type='text/javascript' src='../../lib/jquery-scrolltofixed.js'></script>
+    <script type='text/javascript' src='../../lib/jquery-scrollUp.js'></script>
+    <script type='text/javascript' src='../../lib/app.js'></script>
+  </body>
+</html>
+
+<!-- Localized -->
